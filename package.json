@@ -1,0 +1,26 @@
+{
+  "name": "ts-starter-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently \"pnpm run start:build\" \"pnpm run start:run\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@9.4.0",
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "concurrently": "^8.2.2",
+    "eslint": "9.x",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.8.0",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0"
+  }
+}
